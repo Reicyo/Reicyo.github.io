@@ -1,5 +1,5 @@
 (function (w, d) {
-    var body = $('body, html'),
+	var body = $('body, html'),
         toc = $("#post-toc"),
         headerMenu = $("#header-menu"),
         backTop = $("#sidebar-top"),
@@ -12,6 +12,7 @@
         mobileHeaderMenu = $("#mobile-header-menu-nav"),
         _mobileHeaderMenuLocked = false,
         sideMenuBoxIsOpen = true,
+		//chattingRoom = $(".gitter-open-chat-button"),//我的聊天室
         clientHeight = d.documentElement.clientHeight; //获取可视区的高度
     var Blog = {
         showHeaderMenu: function (scrollTop) {
@@ -201,8 +202,7 @@
             scrollTop: 0
         }, 500);
     });
-
-    //获取滚动事件
+	//获取滚动事件
     d.addEventListener('scroll', function () {
         var scrollTop = d.documentElement.scrollTop || d.body.scrollTop;
         Blog.showHeaderMenu(scrollTop);
@@ -223,6 +223,8 @@
             _mobileHeaderMenuLocked = false;
         }, 350);
     });
+	
+		
     
     //Share
     if (w.mihoConfig.share) {
