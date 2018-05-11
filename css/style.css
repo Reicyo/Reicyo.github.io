@@ -2250,7 +2250,7 @@ pre .javascript .function {
   z-index: 999;
   position: fixed;
   bottom: 300px;
-  right: calc(50% - 525px);
+  right: calc(50% + 472px);
 }
 .sidebar div {
   display: block;
